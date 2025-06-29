@@ -1,0 +1,7 @@
+[build]
+  base = "client"
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  VITE_BACKEND_URL = "https://lms-backend-r79k.onrender.com"
