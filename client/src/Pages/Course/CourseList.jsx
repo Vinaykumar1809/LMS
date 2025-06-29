@@ -8,7 +8,7 @@ import { getAllCourses } from "../../Redux/Slices/CourseSlice";
 function CourseList() {
     const dispatch = useDispatch();
 
-   const courseData = useSelector((state) => state.course?.courseData || []);
+  const { courseData } = useSelector((state) => state.course); 
     console.log(courseData);
     async function loadCourses() {
         await dispatch(getAllCourses());
